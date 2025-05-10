@@ -20,7 +20,7 @@ try {
 
 // define default timeouts and urls here so we can use them in the validators
 // so we can use them in the validators
-const DEFAULT_TIMEOUT = 20000; // 15 seconds
+const DEFAULT_TIMEOUT = 15000; // 15 seconds
 
 const secretKey = makeValidator((x) => {
   if (typeof x !== 'string') {
@@ -378,7 +378,7 @@ export const Settings = cleanEnv(process.env, {
     desc: 'MediaFusion API password',
   }),
   DEFAULT_MEDIAFUSION_TIMEOUT: num({
-    default: undefined,
+    default: 20000,
     desc: 'Default MediaFusion timeout',
   }),
   MEDIAFUSION_CONFIG_TIMEOUT: num({
