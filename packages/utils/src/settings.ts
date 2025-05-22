@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import path from 'path';
-import p from '../package.json';
+import p from '../../../package.json';
 import {
   cleanEnv,
   str,
